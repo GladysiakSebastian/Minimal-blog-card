@@ -1,0 +1,136 @@
+/* CSS VARIABLES */
+:root {
+  --color-light-1: #ffffff;
+  --color-light-2: #fafaf9;
+  --color-light-3: #e5eaf0;
+
+  --color-dark-1: #394150;
+  --color-dark-2: #20293a;
+
+  --color-accent-1: #f9f5fe;
+  --color-accent-2: #7c19ee;
+
+  --font-family: "Sora", sans-serif;
+}
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-light-2);
+  font-family: var(--font-family);
+  letter-spacing: -1%;
+}
+
+.card {
+  padding: 1rem 1rem 1.25rem 1rem;
+  background-color: var(--color-light-1);
+  border-radius: 12px;
+  max-width: 368px;
+  position: relative;
+}
+
+.card__img {
+  border-radius: 8px;
+}
+
+.card__tag {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  border-radius: 50px;
+  font-size: 0.625rem;
+  color: var(--color-accent-2);
+  font-weight: 600;
+  background-color: var(--color-accent-1);
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.card__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-dark-2);
+  margin-bottom: 0.375rem;
+}
+
+.card__desc {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--color-dark-1);
+  margin-bottom: 2.5rem;
+}
+
+.card__deco {
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-light-3);
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+}
+
+.card__author {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-dark-1);
+}
